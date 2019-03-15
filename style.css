@@ -1,0 +1,178 @@
+/* Tags */
+
+body {
+  margin: 0;
+  font-family: 'Karla',
+    sans-serif;
+
+
+
+}
+
+.nav-container,
+.welcome-container,
+.welcome-item1,
+.welcome-item2,
+.about-container,
+.about-item1,
+.about-item2,
+.about-item3,
+.about-item4,
+.footer-container,
+
+.eduction-container,
+.education-item1,
+.education-item2,
+.career-container,
+.career-item1,
+.career-item2,
+li,
+a {
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+
+h2 {
+  font-family: 'Pacifico',
+    cursive;
+}
+
+footer {
+  background-color: #444;
+}
+
+
+/* flex containers */
+
+.nav-container {
+  display: flex;
+  background-color: #f5f5f2;
+  ;
+}
+
+.welcome-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  background: #eecda3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ef629f, #eecda3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ef629f, #eecda3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #f5f5f2;
+
+
+}
+
+.career-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: #fff;
+
+}
+
+.eduction-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f2;
+
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* flex Items  */
+.nav-item1 {
+  margin-right: auto;
+  flex-grow: 1;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+}
+
+.li-a {
+  flex-basis: 6%;
+  margin: 0 1% 0 0;
+}
+
+.welcome-item1,
+.welcome-item2 {
+  margin: auto;
+}
+
+.welcome-item1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.about-item1,
+.about-item2 {
+  width: 75%;
+
+  background-color: #f5f5f2;
+  ;
+}
+
+
+
+.career-item1,
+.career-item2 {
+  background-color: #FFF;
+}
+
+
+.career-logo {
+  height: 84.5px;
+  width: 267.5px;
+}
+
+.kbt-logo {
+  height: 82.75px;
+  width: 149.875px;
+  /* height: 165.5px;
+  width: 299.75px;*/
+}
+
+.education-item1 {
+  background-color: background-color: #f5f5f2;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
