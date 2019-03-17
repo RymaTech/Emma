@@ -4,12 +4,9 @@ body {
   margin: 0;
   font-family: 'Karla',
     sans-serif;
-
-
-
 }
 
-.nav-container,
+/* .nav-container, */
 .welcome-container,
 .welcome-item1,
 .welcome-item2,
@@ -19,18 +16,27 @@ body {
 .about-item3,
 .about-item4,
 .footer-container,
-
 .eduction-container,
 .education-item1,
 .education-item2,
 .career-container,
 .career-item1,
 .career-item2,
-li,
-a {
+li {
   border: 1px #ccc solid;
   padding: 10px;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
 
 h2 {
   font-family: 'Pacifico',
@@ -46,8 +52,9 @@ footer {
 
 .nav-container {
   display: flex;
-  background-color: #f5f5f2;
-  ;
+  background-color: #FFC0CB;
+  align-items: center;
+  padding: 1%
 }
 
 .welcome-container {
@@ -67,28 +74,32 @@ footer {
   justify-content: space-between;
   flex-direction: column;
   background-color: #f5f5f2;
-
+  align-items: center;
+  margin-top: 0;
 
 }
 
 .career-container {
   display: flex;
   flex-wrap: wrap;
-
   background-color: #fff;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: 0;
 
 }
 
 .eduction-container {
   display: flex;
   flex-direction: column;
-  background-color: #f5f5f2;
+  margin-top: 0;
 
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 0;
 }
 
 /* flex Items  */
@@ -97,6 +108,17 @@ footer {
   flex-grow: 1;
   font-family: 'Pacifico', cursive;
   font-size: 1.5rem;
+}
+
+.nav-item2 {
+  font-size: 1.2rem;
+  padding: 1%;
+
+}
+
+.nav-item2:visited,
+.nav-item1:visited {
+  color: black;
 }
 
 .li-a {
@@ -117,18 +139,26 @@ footer {
 .about-item1,
 .about-item2 {
   width: 75%;
-
   background-color: #f5f5f2;
-  ;
 }
 
-
+.about-item1 {
+  margin-top: 0;
+}
 
 .career-item1,
 .career-item2 {
   background-color: #FFF;
 }
 
+.career-item2 {
+  margin: 2%;
+}
+
+.career-item1,
+.education-item1 {
+  margin-top: 0;
+}
 
 .career-logo {
   height: 84.5px;
@@ -138,14 +168,7 @@ footer {
 .kbt-logo {
   height: 82.75px;
   width: 149.875px;
-  /* height: 165.5px;
-  width: 299.75px;*/
 }
-
-.education-item1 {
-  background-color: background-color: #f5f5f2;
-}
-
 
 .fa {
   padding: 20px;
@@ -158,6 +181,14 @@ footer {
 
 .fa:hover {
   opacity: 0.7;
+}
+
+.color-about {
+  background-color: #f5f5f2;
+}
+
+.color-about1 {
+  background-color: #FFC0CB;
 }
 
 
