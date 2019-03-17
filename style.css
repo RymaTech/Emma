@@ -6,29 +6,9 @@ body {
     sans-serif;
 }
 
-/* .nav-container, */
-.welcome-container,
-.welcome-item1,
-.welcome-item2,
-.about-container,
-.about-item1,
-.about-item2,
-.about-item3,
-.about-item4,
-.footer-container,
-.eduction-container,
-.education-item1,
-.education-item2,
-.career-container,
-.career-item1,
-.career-item2,
-li {
-  border: 1px #ccc solid;
-  padding: 10px;
-}
-
 a {
   text-decoration: none;
+
 }
 
 a:hover {
@@ -54,12 +34,13 @@ footer {
   display: flex;
   background-color: #FFC0CB;
   align-items: center;
-  padding: 1%
+  padding: 1%;
 }
 
 .welcome-container {
   display: flex;
   flex-wrap: wrap;
+  padding: 5% 5% 5% 5%;
 
   background: #eecda3;
   /* fallback for old browsers */
@@ -76,7 +57,7 @@ footer {
   background-color: #f5f5f2;
   align-items: center;
   margin-top: 0;
-
+  padding: 0 5% 5% 5%;
 }
 
 .career-container {
@@ -86,23 +67,41 @@ footer {
   align-items: stretch;
   justify-content: center;
   margin-top: 0;
-
+  padding: 0 4% 2% 4%;
 }
 
 .eduction-container {
   display: flex;
   flex-direction: column;
   margin-top: 0;
-
+  padding: 0 3% 3% 3%;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 0;
+  padding: 2% 2% 2% 2%;
 }
 
 /* flex Items  */
+
+.about-item1,
+.career-item1,
+.education-item1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 3% 3% 0 3%;
+}
+
+
+
+
+
+
+
+
+
 .nav-item1 {
   margin-right: auto;
   flex-grow: 1;
@@ -134,16 +133,22 @@ footer {
 .welcome-item1 {
   color: white;
   font-size: 3rem;
+
+  width: 575px;
+  padding: 0;
+}
+
+.c1:hover,
+.c2:hover,
+.c3:hover,
+.c4:hover {
+  transform: scale(1.2);
 }
 
 .about-item1,
 .about-item2 {
   width: 75%;
   background-color: #f5f5f2;
-}
-
-.about-item1 {
-  margin-top: 0;
 }
 
 .career-item1,
@@ -153,21 +158,6 @@ footer {
 
 .career-item2 {
   margin: 2%;
-}
-
-.career-item1,
-.education-item1 {
-  margin-top: 0;
-}
-
-.career-logo {
-  height: 84.5px;
-  width: 267.5px;
-}
-
-.kbt-logo {
-  height: 82.75px;
-  width: 149.875px;
 }
 
 .fa {
@@ -191,7 +181,28 @@ footer {
   background-color: #FFC0CB;
 }
 
+.career-logo {
+  height: 84.5px;
+  width: 267.5px;
+}
 
+.kbt-logo {
+  /* height: 82.75px;
+  width: 149.875px; */
+  height: 125.5px;
+  width: 267.5px;
+}
+
+.BRC-logo {
+  height: 84.5px;
+  width: 280.5px;
+}
+
+.education-p {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
 
 .fa-linkedin {
   background: #007bb5;
@@ -206,4 +217,40 @@ footer {
 .fa-rss {
   background: #ff6600;
   color: white;
+}
+
+.typed::after {
+  content: '▋';
+  display: inline;
+  -webkit-animation: .7s infinite blink;
+  animation: .7s infinite blink;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1
+  }
+
+  50% {
+    opacity: 0
+  }
+}
+
+@-webkit-keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1
+  }
+
+  50% {
+    opacity: 0
+  }
 }
